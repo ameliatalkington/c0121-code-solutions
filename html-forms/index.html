@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>HTML Forms</title>
   </head>
+
   <body>
     <h1>Coding Form!</h1>
     <form action="">
-      <div>Email</div>
-        <input type="text" name="email" size="10" maxlenth="30"/>
-      <div>Why is coding cool?</div>
-        <select name="Select an option">
-          <option value="why is coding cool">Because it's interesting</option>
-          <option value="why is coding cool">Because it's fun</option>
-          <option value="why is coding cool">Because it's powerful</option>
-        </select>
-      <div>Favorite Langauge (choose one)</div>
-      <div>
-        <input type="radio" name="code"/> HTML
-        <input type="radio" name="code"/> CSS
-        <input type="radio" name="code"/> Javascript
-      </div>
-      <div>Would you like more information?</div>
-        <input type="checkbox" name="signUp"/>Sign me up!
-      <div>Comments</div>
-        <textarea name="Comments" cols="20" rows="4"></textarea>
-      <div></div>
-        <input type="submit" name="Submit"/>
+      <label for="email">Email
+        <div>
+          <input type="text" name="email" size="10" maxlenth="30" />
+        </div>
+      </label>
+      <label for="Cool Coding">Why is coding so cool?
+        <div>
+          <select name="Select an option">
+            <option value="why is coding cool" selected="selected">Select an option</option>
+            <option value="why is coding cool">Because it's interesting</option>
+            <option value="why is coding cool">Because it's fun</option>
+            <option value="why is coding cool">Because it's powerful</option>
+          </select>
+        </div>
+      </label>
+      <label for="Language">Favorite Language (choose one)
+        <div>
+          <input type="radio" name="code" /> HTML
+          <input type="radio" name="code" /> CSS
+          <input type="radio" name="code" /> Javascript
+        </div>
+      </label>
+      <label for="information">Would you like more information?
+        <div>
+          <input type="checkbox" name="signUp" />Sign me up!
+        </div>
+      </label>
+      <label for="comments">Comments
+        <div>
+          <textarea name="Comments" cols="20" rows="4"></textarea>
+        </div>
+      </label>
+      <label for="sumbit">
+        <div>
+          <input type="submit" name="Submit" />
+        </div>
+      </label>
     </form>
   </body>
+
 </html>
