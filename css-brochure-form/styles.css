@@ -1,9 +1,5 @@
-body {
-  align-content: center;
-}
-
 fieldset {
-  width: 40%;
+  width: 33%;
   border: none;
   margin: auto;
 }
@@ -11,7 +7,8 @@ fieldset {
 h2 {
   text-align: center;
   font-family: 'Brandon Grotesque', sans-serif;
-  font-size: medium;
+  font-style: normal;
+  font-size: 1rem;
   color: rgb(236, 95, 89);
   font-weight: 500;
   letter-spacing: 1px;
@@ -19,8 +16,8 @@ h2 {
 
 label:not(:last-child) {
   font-family: 'Brandon Grotesque', sans-serif;
-  font-size: x-small;
-  font-weight: bolder;
+  font-size: 0.65rem;
+  font-weight: 500;
   padding-left: 7px;
   color: rgb(43, 43, 43);
   padding-bottom: 2px;
@@ -39,15 +36,17 @@ input {
 #company-email,
 #name,
 #where {
-  padding-left: 2%;
+  padding-left: 8px;
   font-family: 'AtlasGrotesk', sans-serif;
   opacity: 70%;
+  font-weight: 300;
 }
 
 select {
   font-family: 'Brandon Grotesque', sans-serif;
   background-color: rgb(243, 243, 243);
   border-radius: 3px;
+  opacity: 80%;
 }
 
 #submit {
@@ -61,5 +60,5 @@ select {
   border-radius: 20px;
   font-weight: 500;
   border: none;
-  font-size: small;
+  font-size: 0.8rem;
 }
