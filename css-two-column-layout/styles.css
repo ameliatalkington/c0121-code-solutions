@@ -1,0 +1,82 @@
+.container {
+  width: 825px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 63%;
+  text-align: center;
+  margin: auto;
+}
+
+.column-half {
+  width: 50%;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.text {
+  width: 80%;
+  padding-left: 10px;
+}
+
+.space {
+  height: 10px;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 16px;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: gray;
+}
+
+.image {
+  width: 33%;
+}
+
+.picture {
+  width: 100%;
+}
+
+.learn-more {
+  padding: 25px;
+}
+
+.button {
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  border: rgb(194, 85, 75) solid 2px;
+  color: rgb(194, 85, 75);
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
