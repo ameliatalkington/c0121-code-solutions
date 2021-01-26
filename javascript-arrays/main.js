@@ -3,11 +3,11 @@ console.log('Value of colors[0]:', colors[0]);
 console.log('Value of colors[1]:', colors[1]);
 console.log('Value of colors[2]:', colors[2]);
 
-var sentence = 'America is ' + colors[0] + ', ' + colors[1] + [', and '] + colors[2] + ['.'];
+var sentence = 'America is ' + colors[0] + ', ' + colors[1] + ', and ' + colors[2] + '.';
 console.log(sentence);
 
 colors[2] = 'green';
-var sentenceMexico = 'Mexico is ' + colors[0] + ', ' + colors[1] + [', and '] + colors[2] + ['.'];
+var sentenceMexico = 'Mexico is ' + colors[0] + ', ' + colors[1] + ', and ' + colors[2] + '.';
 console.log(sentenceMexico);
 console.log('Value of colors:', colors);
 
