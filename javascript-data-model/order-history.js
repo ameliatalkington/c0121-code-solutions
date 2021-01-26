@@ -7,6 +7,7 @@ var orderHistory = [
     ship_to: 'JS Masher',
     order_number: '114-3941689-8772232',
     delivery_date: { delivered: 'Delivered', month: 'Aug', day: 8, year: 2020 },
+    delivery_message: null,
     order: [{
       product_name: 'Javascript for impatient programmers',
       author: 'Rauschmayer, Dr. Axel',
@@ -48,6 +49,7 @@ var orderHistory = [
     ship_to: 'JS Masher',
     order_number: '113-2883177-2648248',
     delivery_date: { delivered: 'Delivered', month: 'Jul', day: 5, year: 2020 },
+    delivery_message: null,
     order: [{
       product_name: 'GameCube Controller - Super Smash Bros. Edition (Nintendo Switch)',
       return_window: 'Return window closed on Aug 4, 2020',
