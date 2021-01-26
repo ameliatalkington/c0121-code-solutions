@@ -7,7 +7,6 @@ var orderHistory = [
     ship_to: 'JS Masher',
     order_number: '114-3941689-8772232',
     delivery_date: { delivered: 'Delivered', month: 'Aug', day: 8, year: 2020 },
-    delivery_message: '',
     order: [{
       product_name: 'Javascript for impatient programmers',
       author: 'Rauschmayer, Dr. Axel',
@@ -39,7 +38,6 @@ var orderHistory = [
     order: [{
       product_name: 'Gamecube Controller Adapter. Super Smash Bros Switch Gamecube Adapter ' +
         'for WII U, PC. Support Turbo and Vibration Features. No Driver and No Lag-Gamecube Adapter',
-      author: 'Alexander, Christopher',
       return_window: 'Return window closed on Aug 5, 2020',
       price: 15.98
     }]
@@ -50,10 +48,8 @@ var orderHistory = [
     ship_to: 'JS Masher',
     order_number: '113-2883177-2648248',
     delivery_date: { delivered: 'Delivered', month: 'Jul', day: 5, year: 2020 },
-    delivery_message: '',
     order: [{
       product_name: 'GameCube Controller - Super Smash Bros. Edition (Nintendo Switch)',
-      author: '',
       return_window: 'Return window closed on Aug 4, 2020',
       price: 94.95
     },
