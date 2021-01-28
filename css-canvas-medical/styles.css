@@ -1,6 +1,9 @@
 body {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 section {
@@ -27,9 +30,6 @@ nav {
   width: 57%;
   display: flex;
   padding-right: 4rem;
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
   text-align: right;
   justify-content: center;
@@ -83,9 +83,6 @@ a {
 }
 
 .xsmall-text {
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 20px;
   padding-bottom: 20px;
@@ -99,15 +96,18 @@ h1 {
   line-height: 35px;
 }
 
+h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .get-started-button {
   width: 150px;
   height: 40px;
   border-radius: 4px;
   color: white;
   background-color: rgb(28, 66, 98);
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   border: none;
 }
@@ -137,9 +137,6 @@ h1 {
 }
 
 .small-text {
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
@@ -202,9 +199,6 @@ h1 {
 }
 
 .title {
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   color: white;
   font-size: 16px;
 }
