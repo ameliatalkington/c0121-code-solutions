@@ -9,8 +9,9 @@
 function getNumbersToTen() {
   var numbers = [];
   var currentNumber = 1;
-  for (currentNumber = 1; currentNumber <= 10; currentNumber++) {
+  while (currentNumber <= 10) {
     numbers.push(currentNumber);
+    currentNumber++;
   }
   return numbers;
 }
@@ -18,8 +19,9 @@ function getNumbersToTen() {
 function getEvenNumbersToTwenty() {
   var evenNumbers = [];
   var currentNumber = 2;
-  for (currentNumber = 2; currentNumber <= 20; currentNumber += 2) {
+  while (currentNumber <= 20) {
     evenNumbers.push(currentNumber);
+    currentNumber += 2;
   }
   return evenNumbers;
 }
