@@ -4,6 +4,7 @@ function includesSeven(array) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] === 7) {
       hasSeven = true;
+      break;
     }
   }
   return hasSeven;
