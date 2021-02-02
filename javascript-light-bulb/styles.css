@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+}
+
+.background.light {
+  background-color: rgb(253, 249, 242);
+}
+
+.background.dark {
+  background-color: rgb(17, 17, 17);
+}
+
+.circle.sun {
+  background-color: rgb(247, 234, 146);
+  box-shadow: 0 0 20px rgb(247, 234, 146);
+}
+
+.circle.dark {
+  background-color: rgb(37, 37, 37);
+}
