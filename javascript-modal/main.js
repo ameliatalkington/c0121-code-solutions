@@ -1,10 +1,12 @@
-var $buttonClick = document.querySelector('.button');
+var $buttonClick = document.querySelectorAll('.button');
+var $buttonOpen = $buttonClick[0];
+var $buttonClose = $buttonClick[1];
 var $closeButton = document.querySelector('.button.close');
 var $modalBox = document.querySelector('.modal-box');
 var isOpen = false;
 
 function click(event) {
-  if ($buttonClick.className === 'button open') {
+  if ($buttonOpen.className === 'button open') {
     $modalBox.className = 'modal-box on';
     isOpen = true;
   }
