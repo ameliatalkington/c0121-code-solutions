@@ -6,12 +6,7 @@ function cardGame(players, cards) {
 
   var playersCollection = {};
   for (var i = 0; i < players.length; i++) {
-    var cardsForPlayer = _.sampleSize(shuffledCards, cards);
-    playersCollection[players[i]] = (calculateScore(cardsForPlayer));
-    // for (var key in cardsForPlayer) {
-    //   shuffledCards = _.omit(shuffledCards, _.includes(cardsForPlayer, cardsForPlayer[key]));
-    //   console.log(shuffledCards);
-    // }
+    playersCollection[players[i]] = calculateScore((shuffledCards.splice(0, cards)));
   }
 
   var max = 0;
@@ -66,7 +61,7 @@ function calculateScore(arrayOfObjects) {
 
 var competitors = ['Amelia', 'Louis', 'TJ', 'Cody', 'Tim'];
 var numOfCards1 = 6;
-var numOfCards2 = 4;
+var numOfCards2 = 5;
 var numOfCards3 = 7;
 
 cardGame(competitors, numOfCards1);
