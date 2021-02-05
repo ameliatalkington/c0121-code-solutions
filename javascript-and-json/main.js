@@ -23,6 +23,9 @@ var JSONBooksString = JSON.stringify(books);
 console.log('JSON string of array:', JSONBooksString);
 console.log('typeof JSONBooksString', typeof JSONBooksString);
 
-var JSONReverted = JSON.parse(JSONBooksString);
-console.log('Parsed JSON String:', JSONReverted);
-console.log('typeof JSONReverted:', typeof JSONReverted);
+var student = '{"numberID":"832934903", "name":"Amelia"}';
+console.log('Student string:', student);
+console.log('typeof student:', typeof student);
+var studentObject = JSON.parse(student);
+console.log('studentObject:', studentObject);
+console.log('typeof studentObject', typeof studentObject);
