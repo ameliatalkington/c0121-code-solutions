@@ -4,19 +4,19 @@ var $view = document.querySelectorAll('.view');
 
 $tabContainer.addEventListener('click', function (event) {
   if (event.target.matches('.tab')) {
-    for (var value of $tabs.values()) {
-      if (event.target === value) {
-        value.className = 'tab active';
+    for (var i = 0; i < $tabs.length; i++) {
+      if (event.target === $tabs[i]) {
+        $tabs[i].className = 'tab active';
       } else {
-        value.className = 'tab';
+        $tabs[i].className = 'tab';
       }
     }
     var $dataView = event.target.getAttribute('data-view');
-    for (var values of $view.values()) {
-      if (values.getAttribute('data-view') === $dataView) {
-        values.className = 'view';
+    for (var j = 0; j < $view.length; j++) {
+      if ($view[j].getAttribute('data-view') === $dataView) {
+        $view[j].className = 'view';
       } else {
-        values.className = 'view hidden';
+        $view[j].className = 'view hidden';
       }
     }
   }
