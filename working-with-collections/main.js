@@ -45,15 +45,15 @@ function cardCollection() {
   return arrayOfCardObjects;
 }
 
-function calculateScore(shuffledDeck) {
+function calculateScore(hand) {
   var count = 0;
-  for (var index = 0; index < shuffledDeck.length; index++) {
-    if (shuffledDeck[index].rank === 'ace') {
+  for (var index = 0; index < hand.length; index++) {
+    if (hand[index].rank === 'ace') {
       count += 11;
-    } else if (shuffledDeck[index].rank === 'jack' || shuffledDeck[index].rank === 'queen' || shuffledDeck[index].rank === 'king') {
+    } else if (hand[index].rank === 'jack' || hand[index].rank === 'queen' || hand[index].rank === 'king') {
       count += 10;
     } else {
-      count += shuffledDeck[index].rank;
+      count += hand[index].rank;
     }
   }
   return count;
