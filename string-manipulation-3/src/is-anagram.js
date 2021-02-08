@@ -1,17 +1,29 @@
 /* exported isAnagram */
 function isAnagram(firstString, secondString) {
-  var string1Array = firstString.split('');
-  var sortedString1 = string1Array.sort();
-  var string2Array = secondString.split('');
-  var sortedString2 = string2Array.sort();
-  console.log(sortedString1);
-  console.log(sortedString2);
+  var isAnagram = true;
+  var firstStringNoSpace = '';
+  var secondStringNoSpace = '';
+  var noSpaceString1 = firstString.split(' ');
+  var noSpaceString2 = secondString.split(' ');
+  for (var index = 0; index < noSpaceString1.length; index++) {
+    firstStringNoSpace += noSpaceString1[index]
+  }
+  for (var i = 0; i < noSpaceString2.length; i++) {
+    secondStringNoSpace += noSpaceString2[i];
+  }
 
-  for (var i = 0; i < sortedString1; i++) {
-    if (sortedString1[i] !== sortedString2[i]) {
-      return false;
+  var string1Array = firstStringNoSpace.split('');
+  var sortedString1 = string1Array.sort();
+  var string2Array = secondStringNoSpace.split('');
+  var sortedString2 = string2Array.sort();
+
+  for (var j = 0; j < sortedString1.length; j++) {
+    if (sortedString1[j] === sortedString2[j]) {
+      isAnagram = true;
+    } else {
+      isAnagram = false;
       break;
     }
-    return true;
   }
+  return isAnagram;
 }
