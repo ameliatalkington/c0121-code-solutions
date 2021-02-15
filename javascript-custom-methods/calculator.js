@@ -13,7 +13,7 @@ var calculator = {
     return (x / y);
   },
   square: function (x) {
-    return (x * x);
+    return (calculator.multiply(x, x));
   },
   sumAll: function (numbers) {
     var sum = 0;
@@ -27,6 +27,6 @@ var calculator = {
     for (var j = 0; j < numbers.length; j++) {
       sum += numbers[j];
     }
-    return (sum / numbers.length);
+    return calculator.divide(sum, numbers.length);
   }
 };
