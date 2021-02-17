@@ -32,7 +32,7 @@ var interval = setInterval(startLoop, 3000);
 
 function startLoop() {
   clicks++;
-  if (clicks > 4) {
+  if (clicks >= images.length) {
     clicks = 0;
   }
   $pokemon.setAttribute('src', images[clicks].src);
@@ -49,14 +49,14 @@ $container.addEventListener('click', function () {
   clearInterval(interval);
   if (event.target === $rightButton) {
     clicks++;
-    if (clicks > 4) {
+    if (clicks >= images.length) {
       clicks = 0;
     }
   }
   if (event.target === $leftButton) {
     clicks--;
     if (clicks < 0) {
-      clicks = 4;
+      clicks = images.length - 1;
     }
   }
   for (var j = 0; j < $dots.length; j++) {
