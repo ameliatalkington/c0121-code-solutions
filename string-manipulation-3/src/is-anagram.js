@@ -1,16 +1,18 @@
 /* exported isAnagram */
 function isAnagram(firstString, secondString) {
   var isAnagram = true;
-  var noSpaceSecondString = secondString.split(' ').join('');
-  console.log(noSpaceSecondString);
-  for (var i = 0; i < noSpaceSecondString.length; i++) {
-    if (!firstString.includes(noSpaceSecondString[i])) {
+  var firstStringNoSpace = firstString.split(' ').join('');
+  var secondStringNoSpace = secondString.split(' ').join('');
+  var sortedFirstArray = firstStringNoSpace.split('').sort();
+  var sortedSecondArray = secondStringNoSpace.split('').sort();
+
+  for (var i = 0; i < sortedFirstArray.length; i++) {
+    if (sortedFirstArray[i] === sortedSecondArray[i]) {
+      isAnagram = true;
+    } else {
       isAnagram = false;
       break;
-    } else {
-      isAnagram = true;
     }
-    noSpaceSecondString.slice(0, 1);
   }
   return isAnagram;
 }
