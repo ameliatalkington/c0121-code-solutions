@@ -6,7 +6,7 @@ function difference(first, second) {
       newArray.push(first[i]);
     }
   }
-  for (var i=j = 0; j < second.length; j++) {
+  for (var j = 0; j < second.length; j++) {
     if (!(first.includes(second[j]))) {
       newArray.push(second[j]);
     }

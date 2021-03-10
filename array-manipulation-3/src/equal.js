@@ -1,6 +1,6 @@
 /* exported equal */
 function equal(first, second) {
-  var isTrue = true;
+  var isTrue = false;
   if (first.length === second.length) {
     for (var i = 0; i < first.length; i++) {
       if (first[i] === second[i]) {
@@ -10,8 +10,6 @@ function equal(first, second) {
         break;
       }
     }
-  } else {
-    isTrue = false;
   }
   return isTrue;
 }
