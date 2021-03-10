@@ -8,9 +8,9 @@ function intersection (first, second) {
       }
     }
   } else {
-    for (var i = 0; i < second.length; i++) {
-      if (first.includes(second[i])) {
-        newArray.push(second[i]);
+    for (var j = 0; j < second.length; j++) {
+      if (first.includes(second[j])) {
+        newArray.push(second[j]);
       }
     }
   }

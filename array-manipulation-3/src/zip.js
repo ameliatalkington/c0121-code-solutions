@@ -8,9 +8,9 @@ function zip(first, second) {
       newArray.push(miniArray);
     }
   } else {
-    for (var i = 0; i < first.length; i++) {
+    for (var j = 0; i < first.length; j++) {
       var miniArray = [];
-      miniArray.push(first[i], second[i]);
+      miniArray.push(first[j], second[j]);
       newArray.push(miniArray);
     }
   }

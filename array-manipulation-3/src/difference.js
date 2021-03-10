@@ -6,9 +6,9 @@ function difference(first, second) {
       newArray.push(first[i]);
     }
   }
-  for (var i = 0; i < second.length; i++) {
-    if (!(first.includes(second[i]))) {
-      newArray.push(second[i]);
+  for (var i=j = 0; j < second.length; j++) {
+    if (!(first.includes(second[j]))) {
+      newArray.push(second[j]);
     }
   }
   return newArray;
