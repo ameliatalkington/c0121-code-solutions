@@ -9,7 +9,6 @@ function titleCase (title) {
       twoTitleArray.push(title);
     }
     return twoTitleArray.join(': ');
-    console.log(twoTitleArray);
   } else {
     return upperCase(titleSliced[0]).join(' ');
   }
@@ -22,13 +21,8 @@ function upperCase (array) {
     words[i] = words[i].toLowerCase();
     if (i === 0 && words[i] !== 'javascript') {
       var newWord = '';
-      for (var j = 0; j < words[i].length; j++) {
-        if (j === 0) {
-          newWord += words[i][j].toUpperCase();
-        } else {
-          newWord += words[i][j];
-        }
-      }
+      newWord += words[i].charAt(0).toUpperCase();
+      newWord += words[i].slice(1, words[i].length);
       newArray.push(newWord);
     }
     else if (words[i] === 'javascript') {
@@ -41,17 +35,20 @@ function upperCase (array) {
       words[i] === 'the' || words[i] === 'nor' || words[i] === 'but') {
         newArray.push(words[i]);
     }
-    else if (words[i] === 'in-depth') {
-      newArray.push('In-Depth');
+    else if (words[i].indexOf('-') !== -1) {
+      var dashWords = words[i].split('-');
+      var dashCapital = [];
+      for (var n = 0; n < dashWords.length; n++) {
+        var dashWord = '';
+        dashWord += dashWords[n].charAt(0).toUpperCase();
+        dashWord += dashWords[n].slice(1, dashWords[n].length);
+        dashCapital.push(dashWord);
+      }
+      newArray.push(dashCapital.join('-'));
     } else {
       var newCommonWord = '';
-      for (var m = 0; m < words[i].length; m++) {
-        if (m === 0) {
-          newCommonWord += words[i][m].toUpperCase();
-        } else {
-          newCommonWord += words[i][m];
-        }
-      }
+      newCommonWord += words[i].charAt(0).toUpperCase();
+      newCommonWord += words[i].slice(1, words[i].length);
       newArray.push(newCommonWord);
     }
   }
