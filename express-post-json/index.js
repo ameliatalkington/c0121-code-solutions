@@ -20,13 +20,8 @@ const parsedJSON = express.json();
 app.use(parsedJSON);
 
 app.post('/api/grades', (req, res) => {
-  if (!req.body) {
-    res.sendStatus(404);
-  } else {
-    req.body.id = nextID;
-    grades[nextID] = req.body;
-    console.log(grades);
-    nextID++;
-    res.status(201).send(req.body);
-  }
+  req.body.id = nextID;
+  grades[nextID] = req.body;
+  nextID++;
+  res.status(201).send(req.body);
 });
