@@ -1,0 +1,9 @@
+{
+  "nextId": 6,
+  "notes": {
+    "1": "Mac & Cheese is bomb.",
+    "2": "Prototypal inheritance is how JavaScript objects delegate behavior.",
+    "4": "A closure is formed when a function retains access to variables in its lexical scope.",
+    "5": "Coding is painful or fun there is no in-between."
+  }
+}
