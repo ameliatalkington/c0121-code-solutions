@@ -5,6 +5,6 @@ const promise = takeAChance('Amelia');
 promise.then(value => {
   console.log(value);
 });
-promise.catch(value => {
-  console.error(value);
+promise.catch(error => {
+  console.log(error.message);
 })
