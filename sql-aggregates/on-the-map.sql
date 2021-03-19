@@ -1,0 +1,5 @@
+select  "countries",
+        count("cities") as "citiesPerCountry"
+  from  "countries"
+  join  "cities" using ("countryId")
+  group by "countryId";
