@@ -143,9 +143,9 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
     return;
   }
   const sql = `
-    select *
-      from "grades"
-     where "gradeId" = $1
+    delete from "grades"
+    where "gradeId" = $1
+    returning *
   `;
   const params = [gradeId];
   db.query(sql, params)
@@ -156,20 +156,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
           error: `Cannot find grade with gradeId ${gradeId}`
         });
       } else {
-        const sql2 = `
-          delete from "grades"
-          where "gradeId" = $1
-        `;
-        db.query(sql2, params)
-          .then(result => {
-            res.sendStatus(204);
-          })
-          .catch(err => {
-            console.error(err);
-            res.status(500).json({
-              error: 'An unexpected error occurred.'
-            });
-          });
+        res.sendStatus(204);
       }
     })
     .catch(err => {
@@ -178,7 +165,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
         error: 'An unexpected error occurred.'
       });
     });
-})
+});
 
 app.listen(3000, () => {
   console.log('Listening to Port 3000!');
