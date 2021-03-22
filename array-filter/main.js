@@ -26,24 +26,24 @@ console.log(haveD);
 
 function divisibleByTwo(number) {
   if (number !== 0 && number % 2 === 0) {
-    return number;
+    return true;
   }
 }
 
 function biggerThanFive(number) {
   if (number > 5) {
-    return number;
+    return true;
   }
 }
 
 function firstLetterE(name) {
   if (name.charAt(0) === 'E') {
-    return name;
+    return true;
   }
 }
 
 function containLetterD(name) {
   if (name.includes('d') || name.includes('D')) {
-    return name;
+    return true;
   }
 }
