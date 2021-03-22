@@ -29,15 +29,14 @@ const product = numbers.reduce((previousValue, currentValue) => {
 
 console.log('product:', product);
 
-let currentBalance = 0;
 const balance = account.reduce((previousValue, currentValue) => {
   if (currentValue.type === 'deposit') {
-    currentBalance += currentValue.amount;
+    previousValue += currentValue.amount;
   } else {
-    currentBalance -= currentValue.amount;
+    previousValue -= currentValue.amount;
   }
-  return currentBalance;
-}, account[0].balance);
+  return previousValue;
+}, 0);
 
 console.log('balance:', balance);
 
