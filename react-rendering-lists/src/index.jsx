@@ -1,6 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function PokemonList(props) {
+  const pokemons = props.pokemons;
+  const list = pokedex.map((pokemon) =>
+    <li key={pokemon.name}>
+      {pokemon.name}
+    </li>
+  );
+  return (
+    <ul>{list}</ul>
+  );
+}
+
 const pokedex = [
   { number: '001', name: 'Bulbasaur' },
   { number: '004', name: 'Charmander' },
@@ -9,11 +21,7 @@ const pokedex = [
   { number: '039', name: 'Jigglypuff' }
 ];
 
-const pokemons = pokedex.map((pokemon) =>
-  <li>{pokemon.name}</li>
-);
-
 ReactDOM.render(
-  <ul>{pokemons}</ul>,
+  <PokemonList pokemons={pokedex}/>,
   document.querySelector('#root')
 );
