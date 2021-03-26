@@ -1,0 +1,35 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.581);
+}
+
+.menu {
+  position: absolute;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.titles {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
