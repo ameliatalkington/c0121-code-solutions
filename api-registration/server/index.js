@@ -35,7 +35,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       db.query(sql, params)
         .then(result => {
           const newUser = result.rows;
-          throw new ClientError(201, res.json(newUser))
+          res.status(201).json(newUser);
         })
         .catch(err => next(err));
     })
