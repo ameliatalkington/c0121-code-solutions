@@ -1,0 +1,12 @@
+User can sign up.
+The page loads and the default view is the sign in page. The user then clicks on the signin button or the register now link. the componentdidmount method is fired and the new route is parsed. The renderpage method in the app document is called. the path of the route is parsed and if the path is either sign-in or sign-up the auth.jsx file is accessed. inside the auth.jsx file, since there is no user, the welcomemessage displays 'create an account to get started'. The user then inputs their data which is then sent to the authform.jsx. It listens for a submit, and if the user hasnt entered the correct criteria, sends them an error. If they do submit the correct information, the form is submitted and the httpie post request is sent with the user information body. The user is then added into the database along with their hashed password. Then the window location.hash is changed to sign in and the user can sign-in page is rendered. 
+
+
+User can sign in.
+The username, route, handlesignin and handle signout are passed to the appcontext. then the renderpage method is called and the path is sign-in so then the auth file is accessed. Since user is true, the sign in welcome message is displayed and the authform is accessed. The user enters their username and password. on submit, the httpie post request is sent and the onsignin method of the props object is called which is the handleSignIn that is stored in the app-context. The user and token are destructured from the result and the token is stored in local storage, the user is updated in the this.state.user. The render method runs followed by the componentdidmount, which updates the route, decodes the token and finishes authorizing and renders the home page.
+
+User can stay signed in (even if they refresh the page).
+This is because when the user signed-in their data was stored to local storage, preventing it from disappearing on refresh. The state and authorization are already set to that user so they are authorized to see the home page.
+
+User can sign out.
+The signout button is clicked by the user in the nav bar. The handlesignout method is called. The item would be removed from the local storage and this.setState would be reverted to its initial position. The new route would be the sign in page and thats what would get rendered when the render method was called.
